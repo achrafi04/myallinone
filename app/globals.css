@@ -1,0 +1,24 @@
+:root{color-scheme:dark;}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#0b0f19; color:#e6e9f2;}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+.grid{display:grid;gap:12px}
+@media (min-width:900px){.grid.cols2{grid-template-columns:1fr 1fr}}
+.card{background:#121a2b;border:1px solid #22304f;border-radius:16px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{background:#1d2a45;border:1px solid #2a3b63;color:#e6e9f2;border-radius:12px;padding:10px 12px;cursor:pointer}
+.btn.primary{background:#2f5bff;border-color:#2f5bff}
+.btn.danger{background:#5b2030;border-color:#7a2c41}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.input,.select,.textarea{background:#0e1526;border:1px solid #22304f;color:#e6e9f2;border-radius:12px;padding:10px 12px;outline:none}
+.textarea{min-height:90px;width:100%}
+.pill{padding:6px 10px;border:1px solid #2a3b63;border-radius:999px;background:#0e1526}
+.h1{font-size:22px;font-weight:800;margin:0 0 8px}
+.muted{color:#a8b2cc}
+.big{font-size:36px;font-weight:900;letter-spacing:-1px}
+.sep{height:1px;background:#22304f;margin:10px 0}
+.list{display:flex;flex-direction:column;gap:10px}
+.set{display:grid;grid-template-columns:1fr 90px 90px 90px;gap:8px}
+.set > *{width:100%}
+@media (max-width:520px){.set{grid-template-columns:1fr 1fr 1fr;grid-auto-rows:auto}.set .name{grid-column:1 / -1}}
+img.exo{width:100%;max-height:170px;object-fit:cover;border-radius:12px;border:1px solid #22304f}
